@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: white;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#app {
+  width: 40%;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.card-border {
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(24, 39, 82);
+}
+#sun {
+  margin-top: -2.6rem;
+  background-color: rgb(85, 98, 133);
+  border-radius: 50%;
+  padding: 0.5rem;
+  height: 5rem;
+}
+
+.holder {
+  margin: 0 1rem 1rem 1rem;
+  text-align: center;
+}
+
+.entry {
+  margin: 1rem;
+  width: 100%;
+}
+#entryHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+#err-msg {
+  display: none;
+  margin-top: 0.5rem;
+  color: rgb(233, 54, 54);
+  font-size: 1.2rem;
+}
+#city {
+  align-self: flex-end;
+  margin-right: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+#date {
+  font-size: 1.5rem;
+}
+
+#temp {
+  font-size: 5rem;
+}
+
+#content {
+  margin: 1rem 1rem 0.5rem 1rem;
+  font-size: 2rem;
+  word-break: break-all;
+}
+
+.headline {
+  margin: 5rem 2rem 3rem 2rem;
+  text-align: center;
+  font-size: 5rem;
+}
+.zip,
+.feel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  width: 80%;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 2px 2px 8px rgba(46, 46, 46, 0.651);
+}
+
+button {
+  margin-top: 1rem;
+  width: 100%;
+  border: 0;
+  font-size: 1.7rem;
+  padding: 0.7rem;
+  color: white;
+  background-color: #388186;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #388186a8;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 950px) {
+  * {
+    font-size: 10px;
+  }
+  #app {
+    width: 80%;
+  }
+}
